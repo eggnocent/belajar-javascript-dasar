@@ -1,0 +1,1 @@
+console.log("ini adalah js dari external file")
