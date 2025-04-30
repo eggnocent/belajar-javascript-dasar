@@ -1,29 +1,66 @@
-// var nilai = 5;
-
-// if (nilai >= 90) {
-//     console.log("Sangat Bagus");
-// } else if (nilai >= 80) {
-//     console.log("Bagus");
-// } else if (nilai >=70) {
-//     console.log("Usaha Bagus");
-// } else if (nilai >= 50) {
-//     console.log("Belajar lagi");
-// } else if (nilai >= 0) {
-//     console.log("niat sinau gak");
-// }
-
-var jmlAngkot = 10;
-var angkotBeroprasi = 6;
+// jika tanpa parsing
+var angka = prompt('masukan angka');
 
 
-// pengondisian di dalam perulangan
-for(var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+// jika menggunakan else if
+if (angka == 1 ) {
+    alert('anda memasukan angka 1')
+} else if (angka == 2) {
+    alert('anda memasukan angka 2')
+} else if (angka == 3) {
+    alert('anda memasukan angka 3')
+}else {
+    alert('salah')
+}
 
-    if(noAngkot <= 6 && noAngkot !== 5) {
-        console.log('Angkot No.' + noAngkot + ' Beroprasi dengan baik');
-    } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) {
-        console.log('Angkot No. ' + noAngkot + ' sedang lembur')
-    } else {
-        console.log('Angkot No. ' + noAngkot + ' sedang tidak jalan');
-    }
+
+// jika di parsing
+var angka = parseInt(prompt('masukan angka'));
+
+
+// jika menggunakan else if
+if (angka === 1 ) {
+    alert('anda memasukan angka 1')
+} else if (angka === 2) {
+    alert('anda memasukan angka 2')
+} else if (angka === 3) {
+    alert('anda memasukan angka 3')
+}else {
+    alert('salah')
+}
+
+
+// contoh penggunaan while
+var angka = parseInt(prompt('masukan angka: '));
+
+switch (angka) {
+    case 1:
+        alert('anda memasukan angka 1');
+        break;
+    case 2:
+        alert('anda memasukan angka 2');
+        break;
+    case 3:
+        alert('anda memasukan angka 3');
+        break;
+    default:
+        alert('anda memasukan angka yang salah')
+        break;
+}
+
+//  contoh kasus while dan mensederhanakan break
+var item = prompt('masukan nama makanan / minuman : \n (contoh: nasi, susu, slenget, gorengan');
+
+switch (item) {
+    case 'nasi':
+    case 'susu':
+        alert('sehat')
+        break;
+    case 'slenget':
+    case 'gorengan':
+        alert('tak sehat')
+        break;
+    default:
+        alert('coba lagi');
+        break;
 }
